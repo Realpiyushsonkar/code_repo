@@ -39,17 +39,17 @@ public:
         int id = 0;
 
         for (string &rec : recipes) {
-            if (!mpp.contains(rec)) mpp[rec] = id++;
+    //        if (!mpp.contains(rec)) mpp[rec] = id++;
         }
 
         for (auto &ing_list : ingredients) {
             for (string &ing : ing_list) {
-                if (!mpp.contains(ing)) mpp[ing] = id++;
+    //            if (!mpp.contains(ing)) mpp[ing] = id++;
             }
         }
 
         for (string &sup : supplies) {
-            if (!mpp.contains(sup)) mpp[sup] = id++;
+    //        if (!mpp.contains(sup)) mpp[sup] = id++;
         }
 
         int V = id;
